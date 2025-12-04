@@ -1,0 +1,25 @@
+/* style.css - replica layout */
+:root{
+  --bg:#fafafa;
+  --accent:#ce6261;
+  --muted:#666;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#222;line-height:1.45}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.hero{background:#fff;padding:48px 0;border-bottom:6px solid #f1f1f1}
+.hero .lead{font-size:1.25rem;color:var(--muted);margin-top:8px}
+.hero .intro{max-width:720px}
+h1{margin:0;font-size:2rem}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:#fff;border:2px solid #fff}
+.features{background:#fff;margin-top:20px;padding:24px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+.features ul{padding-left:18px}
+.features li{margin:10px 0}
+.about, .faq, .author{background:#fff;margin-top:16px;padding:20px;border-radius:10px}
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.95rem;margin-top:28px}
+@media (max-width:700px){
+  .container{padding:16px}
+  h1{font-size:1.5rem}
+}
